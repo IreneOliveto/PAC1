@@ -20,7 +20,7 @@
 </thead>
 
 <tbody> 
-    <tr> <td>Italà</td> <td></td> <td></td> <td></td> <td>X</td> </tr>
+    <tr> <td>Italià</td> <td></td> <td></td> <td></td> <td>X</td> </tr>
     <tr> <td>Català</td> <td></td> <td></td> <td>X</td> <td></td> </tr>
     <tr>  <td>Español</td> <td></td> <td></td> <td>X</td> <td></td> </tr>
     <tr>  <td>Anglés</td> <td></td> <td>X</td> <td></td> <td></td> </tr>

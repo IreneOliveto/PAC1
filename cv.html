@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html lang="esp">
+<link href='./style.css' rel='stylesheet'>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,23 +9,36 @@
     <title>cv.html</title>
 </head>
 
-<a href="#dades-personals">Dades Personals</a> <a href="#estudis">Estudis</a> <a href="#experiencia-laboral">Experiencia Laboral</a> <a href="#idiomes">Idiomes</a>
-
-<head><title> <h1>Currículum Vitae Irene Oliveto</h1> </title>
-        <h3 id="introduccio">Educadora social i intercultural amb experiència en vendes.</h3>
-</head>
-
 <body>
-<div class="dades-personals">
-    <h2 id="dades-personals">Dades Personals</h2>
-    <p>Nom i cognom: Irene Oliveto
+    <nav>
+        <ul class="navbar">
+            <li><a href="./index.html">Inici</a></li>
+            <li><a href="./cv.html">Currículum Vitae</a></li>
+            <li><a href="./contacte.html">Contacte</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1 class="titol1">Currículum Vitae Irene Oliveto</h1>
+        <h3 id="introduccio">Educadora social i intercultural amb experiència en vendes.</h3>
+    </header>
+
+    <a href="#dades-personals">Dades Personals</a>
+    <a href="#idiomes">Idiomes</a>
+    <a href="#estudis">Estudis</a>
+    <a href="#experiencia-laboral">Experiencia Laboral</a>
+
+    
+    <div class="dades-personals">
+    <h2 class="titol" id="dades-personals">Dades Personals</h2>
+    <address>Nom i cognom: Irene Oliveto
         <br>Adreça: Carrer AAABBBCCC 00
         <br>Correu: irene.oliveto@gmail.com
-        <br>Telèfon: 640000000</p>
-</div>
+        <br>Telèfon: 640000000</address>
+    </div>
 
-<div class="idiomes">
-    <h2 id="idiomes">Idiomes</h2>
+    <div class="idiomes">
+    <h2 class="titol" id="idiomes">Idiomes</h2>
     <table>
     <thead>
         <tr>   
@@ -42,11 +57,11 @@
         <tr>  <td>Anglés</td> <td></td> <td>X</td> </tr>
     </tbody>    
     </table>
-</div>
+    </div>
 
-<div class="estudis">
-    <h2 id="estudis">Estudis</h2>
-        <ul>
+    <div class="estudis">
+    <h2 class="titol" id="estudis">Estudis</h2>
+        <ul class="estudis">
             <li><strong>Direcció i Coordinació de lleure Infantil i Juvenil</strong>
             <br><p>Fundació Pere Tarrés</p></li>
             <li><strong>Màster Didàctica i Psicopedàgogia Alumnes Necessitats Especials</strong>
@@ -54,11 +69,11 @@
             <li><strong>Grau Educació i Ciències Socials, Educació Social</strong>
             <br><p>Università di Modena e Reggio Emilia</p></li>
         </ul>
-</div>
+    </div>
 
-<div class="laboral">
-    <h2 id="laboral">Laboral</h2>
-    <ul>
+    <div class="laboral">
+    <h2 class="titol" id="laboral">Laboral</h2>
+    <ul class="laboral">
         <li><strong>Assessora Comercial a Editorial Teide</strong> (<i>Barcelona</i>, 02/2021 - 10/2021 // 01/2020 - 08/2020 // 01/01/2022 - actual)
             <br>
             <p>
@@ -80,7 +95,7 @@
             </p>
         </li>
     </ul>
-</div>
+    </div>
 </body>
 
 </html>

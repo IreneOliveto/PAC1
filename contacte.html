@@ -1,22 +1,45 @@
-<head>Formulari de contacte</head>
+<!DOCTYPE html>
+
+<html lang="esp">
+<link href='./style.css' rel='stylesheet'>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cv.html</title>
+
+    <h2>Formulari de contacte</h2>
+</head>
+
 <body>
+    <nav>
+        <ul class="navbar">
+            <li><a href="./index.html">Inici</a></li>
+            <li><a href="./cv.html">Currículum Vitae</a></li>
+            <li><a href="./contacte.html">Contacte</a></li>
+        </ul>
+    </nav>
     <form>
         <label for="f_name">Nom</label>
-        <input type="text" name="name" id="f_name" placeholder="Your name">
+        <br>
+        <input type="text" name="name" id="f_name" placeholder="Escriu el teu nom">
         
         <br>
-        <label for="f_name">Email</label>
-        <input type="text" name="email" id="f_email" placeholder="Your email">
+        <br>
+        <label for="f_name">Correu electrònic</label>
+        <br>
+        <input type="text" name="email" id="f_email" placeholder="Escriu el teu correu">
 
         <br>
-        <label for="tarea">Comments</label>
         <br>
-        <textarea name="comments" id="f_tarea" cols="30" rows="10"></textarea>
+        <label for="tarea">Comentaris</label>
+        <br>
+        <textarea name="comments" id="f_tarea" cols="50" rows="10"></textarea>
 
+        <br>
         <br>
         <label for="f_accept">Acepto els termes i condicions de la web</label>
         <input type="checkbox" name="accept" id="f_accept">
-            
-        <input type="submit" value="Enviar">
+        <input type="submit" style="text-align:center;" value="Enviar">
     </form>
 </body>

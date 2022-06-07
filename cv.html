@@ -1,101 +1,105 @@
 <!DOCTYPE html>
 
-<html lang="esp">
-<link href='./style.css' rel='stylesheet'>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cv.html</title>
+    <link href='style.css' rel='stylesheet'>
 </head>
 
 <body>
-    <nav>
-        <ul class="navbar">
-            <li><a href="./index.html">Inici</a></li>
-            <li><a href="./cv.html">Currículum Vitae</a></li>
-            <li><a href="./contacte.html">Contacte</a></li>
-        </ul>
-    </nav>
-
     <header>
-        <h1 class="titol1">Currículum Vitae Irene Oliveto</h1>
-        <h3 id="introduccio">Educadora social i intercultural amb experiència en vendes.</h3>
+        <nav>
+            <ul class="navbar">
+                <li> <a href="./index.html">Inici</a> </li>
+                <li> <a href="./cv.html">Currículum Vitae</a> </li>
+                <li> <a href="./contacte.html">Contacte</a> </li>
+            </ul>
+        </nav>
     </header>
 
-    <a href="#dades-personals">Dades Personals</a>
-    <a href="#idiomes">Idiomes</a>
-    <a href="#estudis">Estudis</a>
-    <a href="#experiencia-laboral">Experiencia Laboral</a>
+    <h1 class="titol1">Currículum Vitae Irene Oliveto</h1>
+    <h3 class="titol3">Educadora social i intercultural amb experiència en vendes.</h3>
+
+    <section id="index"> 
+        <a href="#dades-personals">Dades Personals</a>
+        <a href="#idiomes">Idiomes</a>
+        <a href="#estudis">Estudis</a>
+        <a href="#laboral">Experiencia Laboral</a>
+    </section>
 
     
-    <div class="dades-personals">
-    <h2 class="titol" id="dades-personals">Dades Personals</h2>
-    <address>Nom i cognom: Irene Oliveto
+    <section id="dades-personals">
+        <h2 class="titol2">Dades Personals</h2>
+        <p>Nom i cognom: Irene Oliveto
         <br>Adreça: Carrer AAABBBCCC 00
         <br>Correu: irene.oliveto@gmail.com
-        <br>Telèfon: 640000000</address>
-    </div>
+        <br>Telèfon: 640000000</p>
+    </section>
 
-    <div class="idiomes">
-    <h2 class="titol" id="idiomes">Idiomes</h2>
-    <table>
-    <thead>
-        <tr>   
-        <th scope="col">Idioma</th>
-        <th scope="col">Nivell baix</th>
-        <th scope="col">Nivell mig</th>
-        <th scope="col">Nivell alt</th>
-        <th scope="col">Natiu</th>
-        </tr>
-    </thead>
+    <section id="idiomes">
+        <h2 class="titol2">Idiomes</h2>
+        <table>
+            <thead>
+                <tr>   
+                <th scope="col">Idioma</th>
+                <th scope="col">Nivell baix</th>
+                <th scope="col">Nivell mig</th>
+                <th scope="col">Nivell alt</th>
+                <th scope="col">Natiu</th>
+                </tr>
+            </thead>
 
-    <tbody> 
-        <tr> <td>Italà</td> <td></td> <td></td> <td></td> <td>X</td> </tr>
-        <tr> <td>Català</td> <td></td> <td></td> <td>X</td></tr>
-        <tr>  <td>Español</td> <td></td> <td></td> <td>X</td>  </tr>
-        <tr>  <td>Anglés</td> <td></td> <td>X</td> </tr>
-    </tbody>    
-    </table>
-    </div>
+            <tbody> 
+                <tr> <td>Italà</td> <td></td> <td></td> <td></td> <td>X</td> </tr>
+                <tr> <td>Català</td> <td></td> <td></td> <td>X</td></tr>
+                <tr>  <td>Español</td> <td></td> <td></td> <td>X</td>  </tr>
+                <tr>  <td>Anglés</td> <td></td> <td>X</td> </tr>
+            </tbody>    
+        </table>
+    </section>
 
-    <div class="estudis">
-    <h2 class="titol" id="estudis">Estudis</h2>
-        <ul class="estudis">
-            <li><strong>Direcció i Coordinació de lleure Infantil i Juvenil</strong>
-            <br><p>Fundació Pere Tarrés</p></li>
-            <li><strong>Màster Didàctica i Psicopedàgogia Alumnes Necessitats Especials</strong>
-            <br><p>Università di Modena e Reggio Emilia</p></li>
-            <li><strong>Grau Educació i Ciències Socials, Educació Social</strong>
-            <br><p>Università di Modena e Reggio Emilia</p></li>
+    <section id="estudis">
+        <h2 class="titol2">Estudis</h2>
+        <ul>
+            <li> <strong>Direcció i Coordinació de lleure Infantil i Juvenil</strong>
+                <br>
+                <p>Fundació Pere Tarrés</p> </li>
+            <li> <strong>Màster Didàctica i Psicopedàgogia Alumnes Necessitats Especials</strong>
+                <br>
+                <p>Università di Modena e Reggio Emilia</p> </li>
+            <li> <strong>Grau Educació i Ciències Socials, Educació Social</strong>
+                <br>
+                <p>Università di Modena e Reggio Emilia</p> </li>
         </ul>
-    </div>
+    </section>
 
-    <div class="laboral">
-    <h2 class="titol" id="laboral">Laboral</h2>
-    <ul class="laboral">
-        <li><strong>Assessora Comercial a Editorial Teide</strong> (<i>Barcelona</i>, 02/2021 - 10/2021 // 01/2020 - 08/2020 // 01/01/2022 - actual)
+    <section id="laboral">
+        <h2 class="titol2">Laboral</h2>
+        <ul>
+            <li><strong>Assessora Comercial a Editorial Teide</strong> (<i>Barcelona</i>, 02/2021 - 10/2021 // 01/2020 - 08/2020 // 01/01/2022 - actual)
+                <br>
+                <p>
+                    Agent comercial: seguiment dels clients i identificació de potencials oportunitats de venda, organització de reunions i presentació del producte, negociació i tancament de la venda. Tasques administratives: creació de comandes, enviament factures, gestió d'incidències i devolucions. Registre de tot el procés al CRM.
+                </p>
+            </li>
             <br>
-            <p>
-                Agent comercial: seguiment dels clients i identificació de potencials oportunitats de venda, organització de reunions i presentació del producte, negociació i tancament de la venda. Tasques administratives: creació de comandes, enviament factures, gestió d'incidències i devolucions. Registre de tot el procés al CRM.
-            </p>
-        </li>
-        <br>
-        <li><strong>Inside Sales/Manager Assistant a TopDoctors</strong>, Mercat Italià (<i>Barcelona</i>,2020-21)
-            <br> 
-            <p>
-                Cerca de noves oportunitats de vendes a través del seguiment dels clients i dels potencials clients amb trucades i correus electrònics. Individuar les necessitats i els requisits del client. Registre de tot el procés al CRM. 
-            </p>
-        </li>
-        <br>
-        <li><strong>Educadora Alumnes amb Dificultat d'Aprenentatge, Escola Italiana a Barcelona</strong> (<i>Barcelona</i>,2019)
+            <li><strong>Inside Sales/Manager Assistant a TopDoctors</strong>, Mercat Italià (<i>Barcelona</i>,2020-21)
+                <br> 
+                <p>
+                    Cerca de noves oportunitats de vendes a través del seguiment dels clients i dels potencials clients amb trucades i correus electrònics. Individuar les necessitats i els requisits del client. Registre de tot el procés al CRM. 
+                </p>
+            </li>
             <br>
-            <p>
-                Seguiment i suport als alumnes amb dificultat d'aprenentatge.
-            </p>
-        </li>
-    </ul>
-    </div>
+            <li><strong>Educadora Alumnes amb Dificultat d'Aprenentatge, Escola Italiana a Barcelona</strong> (<i>Barcelona</i>,2019)
+                <br>
+                <p>
+                    Seguiment i suport als alumnes amb dificultat d'aprenentatge.
+                </p>
+            </li>
+        </ul>
+    </section>
 </body>
-
 </html>

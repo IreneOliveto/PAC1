@@ -4,15 +4,18 @@
 }
 
 header {
-    text-align: center;
     padding: 1px;
-    background: rgb(186, 98, 116);
+    margin: auto;
     color:antiquewhite;
     font-size: 20px;
 }
 
 body {
     background-color: antiquewhite;
+}
+
+nav {
+    display: inline-block;
 }
 
 .navbar {
@@ -46,6 +49,9 @@ h1, h3 {
     background-color: rgb(186, 98, 116);
     color:rgb(255, 212, 196);
     text-align: center;
+    margin: 0;
+    padding: 20px;
+    border-top: 1px solid antiquewhite;
 }
 
 h2 {

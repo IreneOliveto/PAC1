@@ -3,14 +3,14 @@
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
+body {
+    background-color: antiquewhite;
+}
+
 header {
     color:antiquewhite;
     font-size: 20px;
     margin: auto;
-}
-
-body {
-    background-color: antiquewhite;
 }
 
 nav {
@@ -18,9 +18,9 @@ nav {
 }
 
 .navbar {
+    background-color: rgb(186, 98, 116);
     list-style-type: none;
     margin: auto;
-    background-color: rgb(186, 98, 116);
     position: fixed;
     border-style: double;
     top: 0;
@@ -46,27 +46,37 @@ nav {
 
 
 h1 {
-    background-color: rgb(186, 98, 116);
+    background-color: rgba(186, 98, 116, 0.76);
     color:rgb(255, 212, 196);
     text-align: center;
     border-style: double;
     margin: auto;
     padding: 20px;
     width: 100%;
+  
 }
 
 h2 {
     color:rgb(186, 98, 116);
 }
 
-.experiencia {
+p {
+    text-align: justify;
+}
+
+.experiencia-container {
     background-color:rgb(197, 147, 134);
     color:antiquewhite;
     margin: auto;
     padding: 0px;
 }
 
+h2.experiencia {
+    color:antiquewhite;
+}
+
 .projecte {
+    text-align: justify;
     border: 2px solid rgb(197, 147, 134);
     border-radius: 5px;
     margin: auto;
@@ -82,26 +92,20 @@ h2 {
 
 h2.f_titol {
     text-align: center;
-    float:
 }
 
 form.formulari {
-    background-image: url("/assets/img.formulari.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
+    background: url("/assets/img.formulari.jpg") no-repeat 100%;
+    width: auto;
     margin: auto;
     padding: 30px;
     text-align: center;
-    width: auto;
-    padding: 0px;
-    margin:auto;
-    border-radius: 4px;
 }
 
 input[type=text], select {
     width: 60%;
-    padding: 12px 20px;
     margin: 8px 0;
+    padding: 12px 20px;
     display: inline-block;
     border: 1px solid;
     border-radius: 4px;

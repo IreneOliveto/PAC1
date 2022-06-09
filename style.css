@@ -4,10 +4,9 @@
 }
 
 header {
-    padding: 1px;
-    margin: auto;
     color:antiquewhite;
     font-size: 20px;
+    margin: auto;
 }
 
 body {
@@ -25,7 +24,7 @@ nav {
     position: fixed;
     border-style: double;
     top: 0;
-    width:100%;
+    width: 100%;
 }
 
 .navbar li {
@@ -50,9 +49,10 @@ h1 {
     background-color: rgb(186, 98, 116);
     color:rgb(255, 212, 196);
     text-align: center;
+    border-style: double;
     margin: auto;
     padding: 20px;
-    border-style: double;
+    width: 100%;
 }
 
 h2 {
@@ -61,22 +61,36 @@ h2 {
 
 .experiencia {
     background-color:rgb(197, 147, 134);
-    color:antiquewhite
+    color:antiquewhite;
+    margin: auto;
+    padding: 0px;
 }
 
 .projecte {
     border: 2px solid rgb(197, 147, 134);
     border-radius: 5px;
+    margin: auto;
+    padding: 0px;
 }
 
 #musica, #viatjar, #caminar, #esport {
     background-color:#e6cab5;
+    border: 2px solid rgb(197, 147, 134);
+    margin: auto;
+    padding: 0px;
 }
 
-h2.formulari {
+h2.titol-formulari {
     text-align: center;
     background-image: url("/assets/img.formulari.jpg");
     background-repeat: no-repeat;
     background-size: 1400px;
+    margin: auto;
     padding: 30px;
+}
+
+.formulari {
+    text-align: left;
+    margin: 0px;
+    padding: 20px;
 }

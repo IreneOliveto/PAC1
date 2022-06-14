@@ -1,6 +1,6 @@
 
 * {
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 body {
@@ -119,6 +119,17 @@ p {
 
 h2.experiencia {
     color:antiquewhite;
+    padding: 20px;
+}
+
+.round {
+    transform: rotate(-90deg);
+
+    /* SVG */
+    fill: none;
+    stroke: antiquewhite;
+    stroke-width: 8;
+    stroke-linecap: round;
 }
 
 .aficions-flex {

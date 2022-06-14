@@ -5,6 +5,7 @@
 
 body {
     background-color: antiquewhite;
+    padding: 20px;;
 }
 
 header {
@@ -53,45 +54,96 @@ h1 {
     margin: auto;
     padding: 20px;
     width: 100%;
-  
+}
+
+.front-img {
+    width: 100%;
+    clear: left;
+    padding: 10px;
 }
 
 h2 {
+    text-align: center;
     color:rgb(186, 98, 116);
+    width: 100%;
 }
 
 p {
     text-align: justify;
+    padding: 20px;
+}
+
+.intro {
+    display:inline-block;
+    width: 100%;
+}
+
+.intro-img {
+    float: right;
+    width: 35%;
+    padding: 20px; 
+}
+
+.projectes-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.projectes-flex > article {
+    border: 2px solid rgb(197, 147, 134);
+    border-radius: 5px;
+    width: 30%;
+    margin: 10px;
+    padding: 20px;
 }
 
 .experiencia-container {
     background-color:rgb(197, 147, 134);
     color:antiquewhite;
-    margin: auto;
-    padding: 0px;
+    text-align: center;
+}
+
+.persentage {
+    text-align: center;
+}
+
+.experiencia-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content:center;    
 }
 
 h2.experiencia {
     color:antiquewhite;
 }
 
-.projecte {
-    text-align: justify;
-    border: 2px solid rgb(197, 147, 134);
-    border-radius: 5px;
-    margin: auto;
-    padding: 0px;
+.aficions-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
-#musica, #viatjar, #caminar, #esport {
+.aficio {    
     background-color:#e6cab5;
     border: 2px solid rgb(197, 147, 134);
-    margin: auto;
-    padding: 0px;
+    text-align: center;
+    width: 45%;
+    margin: 2%;
+    line-height: 75px;
 }
 
-h2.f_titol {
-    text-align: center;
+.aficio-img {
+    width: 10%;
+    display: inline-block;
+}
+
+.aficio-text {
+    display: inline-block;
 }
 
 form.formulari {
@@ -132,3 +184,18 @@ input[type=text], select {
     border-radius: 4px;
     resize: none;
   }
+
+  footer {
+    background-color: rgb(186, 98, 116);
+    height: 50px;
+  }
+  .social {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  

@@ -76,14 +76,15 @@ p {
     padding: 10px 10px;
 }
 
-table, td, th {
+td, th {
     text-align: center;
     border: 1px solid;
     width:fit-content;
     padding: 10px;
   }
   
-  table {
+table {
+    text-align: center;
     border-collapse: collapse;
     width:fit-content;
     margin-top: 10px;
@@ -95,6 +96,22 @@ table, td, th {
     text-align: left;
     margin-top: 10px;
     padding: 10px 10px;
-
   }
 
+  footer {
+    background-color: rgb(186, 98, 116);
+    height: 50px;
+  }
+
+  footer {
+    background-color: rgb(186, 98, 116);
+    height: 50px;
+  }
+  .social {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }

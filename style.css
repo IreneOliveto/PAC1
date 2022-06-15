@@ -157,6 +157,40 @@ h2.experiencia {
     display: inline-block;
 }
 
+.index {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dades-personals {
+    background-color:#e6cab5;
+    text-align: left;
+    margin-top: 10px;
+    padding: 10px 10px;
+}
+
+td, th {
+    text-align: center;
+    border: 1px solid;
+    width:fit-content;
+    padding: 10px;
+  }
+  
+table {
+    text-align: center;
+    border-collapse: collapse;
+    width:fit-content;
+    margin-top: 10px;
+    padding: 10px 10px;
+  }
+
+  .estudis {
+    background-color:#e6cab5;
+    text-align: left;
+    margin-top: 10px;
+    padding: 10px 10px;
+  }
+
 form.formulari {
     background: url("/assets/img.formulari.jpg") no-repeat 100%;
     width: auto;

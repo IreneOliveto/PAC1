@@ -5,7 +5,7 @@
 
 body {
     background-color: antiquewhite;
-    padding: 20px;;
+    padding: 20px auto;
 }
 
 header {
@@ -43,7 +43,7 @@ nav {
 
 .navbar a:hover {
     color:antiquewhite;
-  }
+}
 
 
 h1 {
@@ -157,16 +157,40 @@ h2.experiencia {
     display: inline-block;
 }
 
-.index {
-    text-align: center;
-    margin-top: 10px;
+.index-container {
+    gap: 2rem;
+    height: 100%;
 }
 
-.dades-personals {
-    background-color:#e6cab5;
-    text-align: left;
+.index-link {
     margin-top: 10px;
-    padding: 10px 10px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li.index-li {
+    margin-left: 40px;
+}
+    
+#dades-personals, #estudis {
+    background-color:#e6cab5;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+ul.dades-personals {
+    list-style-type: none;
+    margin-left: 250px;  
+}
+
+#idiomes , #laboral {
+    padding: 10px;
+}
+
+.estudis, .laboral {
+    margin-left: 70px;
 }
 
 td, th {
@@ -174,7 +198,7 @@ td, th {
     border: 1px solid;
     width:fit-content;
     padding: 10px;
-  }
+}
   
 table {
     text-align: center;
@@ -182,21 +206,24 @@ table {
     width:fit-content;
     margin-top: 10px;
     padding: 10px 10px;
-  }
+}
 
-  .estudis {
-    background-color:#e6cab5;
-    text-align: left;
-    margin-top: 10px;
-    padding: 10px 10px;
-  }
-
-form.formulari {
+#formulari-img {
     background: url("/assets/img.formulari.jpg") no-repeat 100%;
     width: auto;
     margin: auto;
     padding: 30px;
-    text-align: center;
+}
+
+form.formulari {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+
+form.checkbox {
+    display: flex;
+    flex-direction:row;
 }
 
 input[type=text], select {
@@ -207,9 +234,9 @@ input[type=text], select {
     border: 1px solid;
     border-radius: 4px;
     box-sizing: border-box;
-  }
+}
   
-  input[type=submit] {
+input[type=submit] {
     width: 25%;
     background-color: rgb(197, 147, 134);
     color:antiquewhite;
@@ -218,9 +245,9 @@ input[type=text], select {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-  }
+}
 
-  textarea {
+textarea {
     width: 60%;
     height: 150px;
     padding: 14px 20px;
@@ -228,19 +255,28 @@ input[type=text], select {
     border: 1px solid;
     border-radius: 4px;
     resize: none;
-  }
+}
 
-  footer {
+footer {
     background-color: rgb(186, 98, 116);
     height: 50px;
-  }
-  .social {
+}
+
+.social-container {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-content: center;
     justify-content: center;
     align-items: center;
-  }
+    gap: 2rem;
+    height: 100%;
+}
+
+.social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
   

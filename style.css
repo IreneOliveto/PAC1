@@ -224,7 +224,7 @@ form.checkbox {
     flex-direction:row;
 }
 
-form > label, div {
+form > label, .checkbox-terminos {
     margin: 10px auto;
 }
 

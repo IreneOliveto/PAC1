@@ -5,42 +5,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contacte.html</title>
+    <title>Formulari Contacte</title>
     <link href='style.css' rel='stylesheet'>
 </head>
 
 <body>
     <header>
-        <nav>
-            <ul class="navbar">
-                <li> <a href="./index.html">Inici</a> </li>
-                <li> <a href="./cv.html">Currículum Vitae</a> </li>
-                <li> <a href="./contacte.html">Contacte</a> </li>
-            </ul>
-        </nav>
+        <header>
+            <nav>
+                <img src="./assets/img/home.svg">
+                <ul class="navbar">
+                    <li> <a href="./index.html">Inici</a> </li>
+                    <li> <a href="./cv.html">Currículum Vitae</a> </li>
+                    <li> <a href="./contacte.html">Contacte</a> </li>
+                </ul>
+            </nav>
+        </header>
     </header>
 
     <main>
         <h1 class="f_titol">Parlem!</h1>
-        
-        <form class="formulari" id="formulari-img">
-            <label for="f_name">Nom</label>
-            <input type="text" name="name" id="f_name" placeholder="Escriu el teu nom">
-            <label for="f_name">Correu electrònic</label>
-            <input type="text" name="email" id="f_email" placeholder="Escriu el teu correu">
-            <label for="tarea">Comentaris</label>           
-            <textarea name="comments" id="f_tarea"></textarea>
-            <input type="checkbox" name="accept" id="f_accept">
-            <label for="f_accept">He llegit i accepto la politica de privacitat</label>
-            <input type="submit" value="Enviar">
-        </form>
+
+        <section class="background-formulari">
+            <form class="formulari">
+                <label for="f_name">Nom</label>
+                <input type="text" name="name" id="f_name" placeholder="Escriu el teu nom">
+                <label for="f_name">Correu electrònic</label>
+                <input type="text" name="email" id="f_email" placeholder="Escriu el teu correu">
+                <label for="tarea">Comentaris</label>           
+                <textarea name="comments" id="f_tarea"></textarea>
+                <div class="checkbox-terminos">
+                    <input type="checkbox" name="accept" id="f_accept">
+                    <label for="f_accept">He llegit i accepto la politica de privacitat</label>
+                </div>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
 
     </main>
 
-
-
     <footer>
-        <section class="social">
+        <section class="social-container">
             <div class="social-link">
                 <a href="https://Facebook.com/">
                     <img src="/assets/img/logo-facebook.svg" alt="Facebook logo" height="30">

@@ -1,6 +1,7 @@
 
 * {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
 }
 
 body {
@@ -15,17 +16,18 @@ header {
 }
 
 nav {
-    display: inline-block;
+    background-color: rgb(186, 98, 116);
+    border-style: double;
+    display:flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    width: 100%;    
 }
 
-.navbar {
-    background-color: rgb(186, 98, 116);
+.navbar {    
     list-style-type: none;
-    margin: auto;
-    position: fixed;
-    border-style: double;
-    top: 0;
-    width: 100%;
+    
 }
 
 .navbar li {
@@ -34,7 +36,6 @@ nav {
 }
 
 .navbar a {
-    display: block;
     color: rgb(255, 212, 196);
     text-align: center;
     padding: 10px 10px;
@@ -52,7 +53,7 @@ h1 {
     text-align: center;
     border-style: double;
     margin: auto;
-    padding: 20px;
+    padding: 2rem;
     width: 100%;
 }
 
@@ -174,7 +175,7 @@ li.index-li {
     margin-left: 40px;
 }
     
-#dades-personals, #estudis {
+.personal-container, .estudis-container {
     background-color:#e6cab5;
     margin-top: 10px;
     padding: 10px;
@@ -185,7 +186,7 @@ ul.dades-personals {
     margin-left: 250px;  
 }
 
-#idiomes , #laboral {
+.idiomes-container, .laboral-container{
     padding: 10px;
 }
 
@@ -201,21 +202,17 @@ td, th {
 }
   
 table {
-    text-align: center;
     border-collapse: collapse;
     width:fit-content;
-    margin-top: 10px;
-    padding: 10px 10px;
+    margin: 2rem auto;
 }
 
-#formulari-img {
-    background: url("/assets/img.formulari.jpg") no-repeat 100%;
-    width: auto;
-    margin: auto;
-    padding: 30px;
+.background-formulari {
+    background: url("/assets/img/img.formulari.jpg") no-repeat 100%;
 }
 
 form.formulari {
+    padding: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;   
@@ -224,6 +221,10 @@ form.formulari {
 form.checkbox {
     display: flex;
     flex-direction:row;
+}
+
+form > label, div {
+    margin: 10px auto;
 }
 
 input[type=text], select {

@@ -71,14 +71,14 @@ h1 {
 }
 
 .front-img {
-    padding-top: 5px;
+    padding-top: 2px;
 }
 
 h2 {
     text-align: center;
     color:rgb(186, 98, 116);
     width: 100%;
-    margin: 2rem;
+    margin-top: 20px;
 }
 
 p {
@@ -366,10 +366,27 @@ footer {
         flex-wrap: wrap;
     }
 
-}
+    .index-link {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
 
-@media only screen and (min-width: 768px) {
+    .personal-flex {
+    width:100%;
+    }
 
+    .estudis, .laboral {
+        margin: 20px;
+    }
+
+    input[type=text], select {
+        width: 100%;
+    }
+
+    textarea {
+        width: 100%;
+    }
 }
 
 @media only screen and (min-width: 992px) {

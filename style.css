@@ -1,407 +1,411 @@
-
-
-
 * {
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin: 0;
-    padding: 0;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	margin: 0;
+	padding: 0;
 }
 
-html,body
-{
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
-    background-color: antiquewhite;
+/* para una mejor lectura del código , primero van los elementos sin clases (sin abusar de la especificidad)
+luego los elementos con clases y por ultimo las media queries */
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	/* margin: 0px;
+	padding: 0px; */ /*Codigo redundante*/
+	overflow-x: hidden;
+	background-color: antiquewhite;
 }
 
 header {
-    color:antiquewhite;
-    font-size: large;
-    margin: auto;
-    width: 100%
+	color: antiquewhite;
+	font-size: large;
+	margin: auto;
+	width: 100%;
 }
 
 nav {
-    background-color: rgb(186, 98, 116);
-    border-style: double;
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+	background-color: rgb(186, 98, 116);
+	border-style: double;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
 }
 
 .navbar {
-    display: flex;
-    flex-direction: row;
+	display: flex;
+	flex-direction: row;
 }
 
 .navbar li {
-    list-style-type: none;
-    border-right: 1px solid antiquewhite;
+	list-style-type: none;
+	border-right: 1px solid antiquewhite;
 }
 
 .navbar a {
-    color: rgb(255, 212, 196);
-    text-align: center;
-    padding: 10px 10px;
-    text-decoration: none;
+	color: rgb(255, 212, 196);
+	text-align: center;
+	padding: 10px 10px;
+	text-decoration: none;
 }
 
 .navbar a:hover {
-    color:antiquewhite;
+	color: antiquewhite;
 }
 
 .front-container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
 }
 
-
 h1 {
-    background-color: rgba(186, 98, 116, 0.76);
-    color:rgb(255, 212, 196);
-    text-align: center;
-    border-style: double;
-    padding: 1rem;
-    font-size: x-large;
+	background-color: rgba(186, 98, 116, 0.76);
+	color: rgb(255, 212, 196);
+	text-align: center;
+	border-style: double;
+	padding: 1rem;
+	font-size: x-large;
 }
 
 .front-img {
-    padding-top: 2px;
+	padding-top: 2px;
 }
 
 h2 {
-    text-align: center;
-    color:rgb(186, 98, 116);
-    width: 100%;
-    margin-top: 20px;
+	text-align: center;
+	color: rgb(186, 98, 116);
+	width: 100%;
+	margin-top: 20px;
 }
 
 p {
-    text-align: justify;
-    padding: 20px;
+	text-align: justify;
+	padding: 20px;
 }
 
 .intro-container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
 }
 
 .intro-flex {
-    display: flex;
-    flex-direction: row;
+	display: flex;
+	flex-direction: row;
 }
 
 .intro-img {
-    float: right;
-    padding: 20px;
+	float: right;
+	padding: 20px;
 }
 
 .projectes-flex {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+	width: 100%;
 }
 
 .projectes-flex > article {
-    border: 2px solid rgb(197, 147, 134);
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin: 10px;
-    padding: 20px;
+	border: 2px solid rgb(197, 147, 134);
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	margin: 10px;
+	padding: 20px;
 }
 
 .experiencia-container {
-    background-color:rgb(197, 147, 134);
-    color:antiquewhite;
-    text-align: center;
+	background-color: rgb(197, 147, 134);
+	color: antiquewhite;
+	text-align: center;
 }
 
 .percentage {
-    text-align: center;
+	text-align: center;
 }
 
 .experiencia-flex {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content:center;    
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-content: center;
+	justify-content: center;
 }
 
 h2.experiencia {
-    color:antiquewhite;
-    padding: 20px;
+	color: antiquewhite;
+	padding: 20px;
 }
 
 .round {
-    transform: rotate(-90deg);
+	transform: rotate(-90deg);
 
-    /* SVG */
-    fill: none;
-    stroke: antiquewhite;
-    stroke-width: 8;
-    stroke-linecap: round;
+	/* SVG */
+	fill: none;
+	stroke: antiquewhite;
+	stroke-width: 8;
+	stroke-linecap: round;
 }
 
 .aficions-flex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 }
 
-.aficio {    
-    background-color: #e6cab5;
-    border: 2px solid rgb(197, 147, 134);
-    width: 45%;
-    margin: 2%;
-    line-height: 75px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
+.aficio {
+	background-color: #e6cab5;
+	border: 2px solid rgb(197, 147, 134);
+	width: 45%;
+	margin: 2%;
+	line-height: 75px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
 }
 
 .aficio-img {
-    width: 10%;
-    display: inline-block;
+	width: 10%;
+	display: inline-block;
 }
 
 .aficio-text {
-    display: inline-block;
+	display: inline-block;
 }
 
 .index-container {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
 }
 
 .index-link {
-    margin-top: 10px;
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	margin-top: 10px;
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 li.index-li {
-    margin-left: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+	margin-left: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .index-li a {
-    padding: 10px;
+	padding: 10px;
 }
 
 .personal-container {
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 .personal-flex {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    width: 80%;
-    margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	width: 80%;
+	margin: 0 auto;
 }
-    
-.personal-container, .estudis-container {
-    background-color:#e6cab5;
-    margin-top: 10px;
-    padding: 10px;
+
+.personal-container,
+.estudis-container {
+	background-color: #e6cab5;
+	margin-top: 10px;
+	padding: 10px;
 }
 
 ul.dades-personals {
-    list-style-type: none;
+	list-style-type: none;
 }
 
-.idiomes-container, .laboral-container{
-    display: flex;
-    flex-direction: column;
-    padding: 20px;    
+.idiomes-container,
+.laboral-container {
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
 }
 
-.estudis, .laboral {
-    margin-left: 70px;
+.estudis,
+.laboral {
+	margin-left: 70px;
 }
 
-td, th {
-    text-align: center;
-    border: 1px solid;
-    width:fit-content;
-    padding: 10px;
+td,
+th {
+	text-align: center;
+	border: 1px solid;
+	width: fit-content;
+	padding: 10px;
 }
-  
+
 table {
-    border-collapse: collapse;
-    width:fit-content;
-    margin: 2rem auto;
+	border-collapse: collapse;
+	width: fit-content;
+	margin: 2rem auto;
 }
 
 .background-formulari {
-    background: url("/assets/img/img.formulari.jpg") no-repeat 100%;
+	background: url('/assets/img/img.formulari.jpg') no-repeat 100%;
 }
 
 form.formulari {
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;   
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 form.checkbox {
-    display: flex;
-    flex-direction:row;
+	display: flex;
+	flex-direction: row;
 }
 
-form > label, .checkbox-terminos {
-    margin: 10px auto;
+form > label,
+.checkbox-terminos {
+	margin: 10px auto;
 }
 
-input[type=text], select {
-    width: 60%;
-    margin: 8px 0;
-    padding: 12px 20px;
-    display: inline-block;
-    border: 1px solid;
-    border-radius: 4px;
-    box-sizing: border-box;
+input[type='text'],
+select {
+	width: 60%;
+	margin: 8px 0;
+	padding: 12px 20px;
+	display: inline-block;
+	border: 1px solid;
+	border-radius: 4px;
+	box-sizing: border-box;
 }
-  
-input[type=submit] {
-    width: 25%;
-    background-color: rgb(197, 147, 134);
-    color:antiquewhite;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+
+input[type='submit'] {
+	width: 25%;
+	background-color: rgb(197, 147, 134);
+	color: antiquewhite;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
 }
 
 textarea {
-    width: 60%;
-    height: 150px;
-    padding: 14px 20px;
-    box-sizing: border-box;
-    border: 1px solid;
-    border-radius: 4px;
-    resize: none;
+	width: 60%;
+	height: 150px;
+	padding: 14px 20px;
+	box-sizing: border-box;
+	border: 1px solid;
+	border-radius: 4px;
+	resize: none;
 }
 
 footer {
-    background-color: rgb(186, 98, 116);
-    height: 50px;
+	background-color: rgb(186, 98, 116);
+	height: 50px;
 }
 
 .social-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    height: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+	height: 100%;
 }
 
 .social-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 @media only screen and (max-width: 600px) {
-    nav {
-        display: -ms-inline-grid;
-        grid-template-columns: 100%;
-    }
+	nav {
+		display: -ms-inline-grid;
+		grid-template-columns: 100%;
+	}
 
-    .intro-flex {
-        display: 100%;
-    }
-    
-    .intro-img {
-        display: none;
-    }
+	.intro-flex {
+		display: 100%;
+	}
 
-    .projectes-flex {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: space-evenly;
-        width: 100%;
-    }
+	.intro-img {
+		display: none;
+	}
 
-    .experiencia-flex {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-content: center;
-        justify-content:center;    
-    }
+	.projectes-flex {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: space-evenly;
+		width: 100%;
+	}
 
-    .aficions-flex {
-        display: flex;
-        justify-content: space-between;
-        align-items: stretch;
-        flex-wrap: wrap;
-    }
+	.experiencia-flex {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		align-content: center;
+		justify-content: center;
+	}
 
-    .index-link {
-        display: flex;
-        align-items: flex-start;
-        flex-direction: column;
-    }
+	.aficions-flex {
+		display: flex;
+		justify-content: space-between;
+		align-items: stretch;
+		flex-wrap: wrap;
+	}
 
-    .personal-flex {
-    width:100%;
-    }
+	.index-link {
+		display: flex;
+		align-items: flex-start;
+		flex-direction: column;
+	}
 
-    .estudis, .laboral {
-        margin: 20px;
-    }
+	.personal-flex {
+		width: 100%;
+	}
 
-    input[type=text], select {
-        width: 100%;
-    }
+	.estudis,
+	.laboral {
+		margin: 20px;
+	}
 
-    textarea {
-        width: 100%;
-    }
+	input[type='text'],
+	select {
+		width: 100%;
+	}
+
+	textarea {
+		width: 100%;
+	}
 }
 
 @media only screen and (min-width: 992px) {
-    .intro-flex {
-        display: inline-grid;
-        grid-template-columns: 60% 40%;
-    }
+	.intro-flex {
+		display: inline-grid;
+		grid-template-columns: 60% 40%;
+	}
 
-    .projectes-flex {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-evenly;
-        width: 100%;
-    }
-    
+	.projectes-flex {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: space-evenly;
+		width: 100%;
+	}
 }
-  
